@@ -1,0 +1,243 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  \textbf{\Huge \scshape Gan Suphakanpittayakul} \\ \vspace{1pt}
+  \small +66 94-336-4341 $|$ \href{mailto:gankhab123@gmail.com}{\underline{gankhab123@gmail.com}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Chulalongkorn University}{Bangkok, Thailand}
+{B.Eng. in Computer Engineering (Ongoing)}{Aug. 2026 -- Present}
+\resumeSubheading
+{Don Bosco Vitthaya School | GPAX: 3.88/4.00}{Udon Thani, Thailand}
+{Senior High School, Math and Science Intensive Program
+}{May 2023 -- Mar. 2026}
+% \resumeSubheading
+% {Pattana Panya School | GPAX: 3.96/4.00}{Udon Thani, Thailand}
+% {Junior High School}{May 2020 -- Mar. 2023}
+\resumeSubHeadingListEnd
+
+%-----------Awards-----------
+\section{Awards and Honors}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Bronze Medal, The 20th Asia-Pacific Informatics Olympiad (APIO 2026)}{May 2026}
+{Asia-Pacific Informatics Olympiad}{Taiwan (Online)}
+\resumeItemListStart
+\resumeItem{Placed 87th among 187 official contestants across Asia.}
+\resumeItem{Official participation representing Thailand, proctored by the IOI Thailand Team Delegation.}
+\resumeItemListEnd
+
+\resumeSubheading
+{6th Place, Finalist, Thailand IOI Team Selection}{May 2026 -- Jun. 2026}
+{The Institute for the Promotion of Teaching Science and Technology}{Bangkok, Thailand}
+\resumeItemListStart
+\resumeItem{Advanced to the final stage and placed 6th among all finalists.}
+\resumeItemListEnd
+
+\resumeSubheading
+{3rd Place Nationally, Gold Medal, The 21st Thailand Olympiad in Informatics}{May 2025}
+{The Promotion of Academic Olympiad and Development of Science Education Foundation}{Thailand}
+\resumeItemListStart
+\resumeItem{First contestant to solve the Day 2 problem \textit{d2\_duty\_free}.}
+\resumeItem{This is the round before the 2-stage Thailand IOI Team Selection.}
+\resumeItemListEnd
+
+\resumeSubheading
+{3rd-Highest Score, ICPC Thailand National Contest}{Sep. 2026}
+{International Collegiate Programming Contest}{Bangkok, Thailand}
+\resumeItemListStart
+\resumeItem{Achieved the 3rd-highest raw score among 61 participating teams.}
+\resumeItem{Competed as an all-first-year team.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Participant, POSN Mathematical Regional Olympiad Selection Camp}{Oct. 2023, Mar. 2024}
+{Khon Kaen University}{Khon Kaen, Thailand}
+\resumeItemListStart
+\resumeItem{Advanced through 2 rounds and placed top 30 in the region.}
+\resumeItem{This is the round before Thailand Mathematical Olympiad (TMO).}
+\resumeItemListEnd
+
+\resumeSubheading
+{High School Math Competition}{Nov. 2024, Nov. 2025}
+{The Mathematical Association of Thailand under the Patronage of His Majesty the King}{}
+\resumeItemListStart
+\resumeItem{52nd nationally; November 2025}
+\resumeItem{59th nationally; November 2024}
+\resumeItemListEnd
+
+% \resumeSubheading
+% {Finalist (Top 12 teams), BangMod Hackathon 2025}{Oct. 2025}
+% {Faculty of Engineering, King Mongkut’s University of Technology Thonburi}{Bangkok, Thailand}
+% \resumeItemListStart
+% \resumeItem{Advanced to the final round in a team competition solving OI-styled problems.}
+% \resumeItem{Coordinated tasks among the other two team members.}
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Scores}
+% \resumeItemListStart
+% \resumeItem{\textbf{Standardized Tests:} SAT: 1560 (RW: 760, Math: 800);\\\hspace{10.2em}IELTS: 8.0 (L: 8.0, R: 9.0, W: 7.0, S: 7.0);\\\hspace{10.2em}CSCA Scores: Math: 97.5, Physics: 92.5}
+% \resumeItem{\textbf{Thai University Central Admission System Tests:} TGAT: 99.985th percentile; TPAT3: 99.995th percentile}
+% \resumeItemListEnd
+
+\begin{tabularx}{\textwidth}{@{}>{\hsize=0.88\hsize}X >{\hsize=1.12\hsize}X@{}}
+\textbf{Standardized Tests} &
+\textbf{Thai University Central Admission System Tests}
+\\[-1pt]
+
+\begin{tabular}[t]{@{}l@{}}
+$\bullet$ SAT: 1560 (RW: 760, Math: 800) \\
+$\bullet$ IELTS: 8.0 (L: 8.0, R: 9.0, W: 7.0, S: 7.0) \\
+$\bullet$ CSCA: Math: 97.5, Physics: 92.5
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+$\bullet$ TGAT: 99.985th percentile (286,788 candidates) \\[-3pt]
+\hspace{0.13in}{\scriptsize\textit{General Aptitude Test for Thai university admissions}} \\
+$\bullet$ TPAT3: 99.995th percentile (123,450 candidates) \\[-3pt]
+\hspace{0.13in}{\scriptsize\textit{Engineering Aptitude Test for Thai university admissions}} \\[-4pt]
+\hspace{0.13in}{\scriptsize\textit{(Mathematics, Physics, and Reasoning)}}
+\end{tabular}
+
+\end{tabularx}
+
+\section{Community Contributions}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Contributor}{May 2025 -- Present}
+{OTOG Grader (Regional practice grader) (otog.in.th)}{Khon Kaen, Thailand}
+\resumeItemListStart
+\resumeItem{Contributed to OTOG, a regional informatics practice platform with 4,270 registered users as of 2026.}
+\resumeItem{Authored 5+ problems and 2+ editorials on OTOG; also available on \href{https://github.com/gansuphakan/otog-problems}{\underline{github}}}
+\resumeItem{Collaborated with former regional representatives to create a mock selection test for the first regional stage contestants competing to advance to the second regional stage.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Problem Setter, Olympiad in Informatics Regional Selection Test}{Mar. 2026 -- Present}
+{Olympiad in Informatics Regional Camp, University of Khon Kaen}{Khon Kaen, Thailand}
+\resumeItemListStart
+\resumeItem{Authored a backup problem for the 2026 final regional selection test (selection for TOI).}
+\resumeItemListEnd
+
+% \resumeSubheading
+% {Problem Setter}{Aug. 2026 -- Present}
+% {Junior Dev Group on Codeforces}{}
+% \resumeItemListStart
+% \resumeItem{Set 1 problem for the 2nd-anniversary contest of the Junior Dev group in Codeforces.}
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
