@@ -1,0 +1,44 @@
+
+name: Publish website
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Compile resume
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: resume.tex
+
+      - uses: actions/configure-pages@v5
+
+      - name: Prepare website
+        run: |
+          mkdir -p _site
+          cp index.html resume.html resume.pdf _site/
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
