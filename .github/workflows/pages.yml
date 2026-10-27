@@ -17,6 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Remove outdated PDF
+        run: rm -f resume.pdf
+
       - name: Compile resume
         uses: xu-cheng/latex-action@v4
         with:
