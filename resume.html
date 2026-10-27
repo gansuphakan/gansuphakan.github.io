@@ -1,24 +1,11 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume - Gan Suphakanpittayakul</title>
+</head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/latex.js@0.12.6/dist/latex.js"></script>
-<script>
-fetch("resume.tex")
-  .then(response => response.text())
-  .then(source => {
-    const generator = latexjs.parse(source, {
-      generator: new latexjs.HtmlGenerator()
-    });
-
-    document.head.appendChild(
-      generator.stylesAndScripts(
-        "https://cdn.jsdelivr.net/npm/latex.js@0.12.6/dist/"
-      )
-    );
-
-    document.body.appendChild(generator.domFragment());
-  });
-</script>
+  <iframe src="resume.pdf" width="100%" height="900" title="Resume"></iframe>
 </body>
 </html>
